@@ -6,7 +6,7 @@ import project5 from "../../public/projects/display5.png";
 
 const Work = () => {
   return (
-    <div className="flex flex-col items-center md:px-14 px-6 my-24">
+    <div id="work" className="flex flex-col items-center md:px-14 px-6 py-24">
       <h1 className="lg:text-9xl md:text-7xl text-5xl font-bold uppercase">WORK</h1>
       <p className="md:text-xl mt-6 mb-12">Our special selection of work.</p>
       <div className="flex flex-wrap w-full">

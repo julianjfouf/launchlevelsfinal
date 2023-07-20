@@ -10,7 +10,7 @@ import CardRight from "./subcomponents/CardRight";
 
 const Process = () => {
   return (
-    <div className="flex flex-col items-center justify-center my-24 px-6 md:px-14">
+    <div id="process" className="flex flex-col items-center justify-center py-24 px-6 md:px-14">
       <h1 className="lg:text-9xl md:text-7xl text-5xl font-bold uppercase text-center">THE PROCESS</h1>
       <p className="md:text-xl mt-6 mb-12">Where form meets function</p>
       <div className="flex flex-col relative">

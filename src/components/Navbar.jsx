@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = ({ setMenu, menu }) => {
   return (
-    <div className="absolute top-0 left-0 right-0 w-full py-6 md:px-14 px-6 flex justify-between items-center">
+    <div id="home" className="absolute top-0 left-0 right-0 w-full py-6 md:px-14 px-6 flex justify-between items-center">
       <svg
         width="152"
         height="59"

@@ -22,7 +22,7 @@ const Testimonials = () => {
     console.log(Math.abs(index % 3));
   }
   return (
-    <div className="flex flex-col my-24 relative px-6 md:px-14">
+    <div id="testimonials" className="flex flex-col py-24 relative px-6 md:px-14">
       <h1 className="lg:text-8xl md:text-6xl text-4xl font-bold uppercase text-center">TESTIMONIALS</h1>
       <p className="md:text-xl mt-6 mb-12 text-center">
         What our clients say about us.
