@@ -45,7 +45,10 @@ const Service = ({
           </a>
         </div>
       </div>
-      <div className="bg-black relative md:px-14 px-6 w-full overflow-hidden text-white flex flex-col justify-between">
+      <div
+        id={number == "01" ? `web` : `soc`}
+        className="bg-black relative md:px-14 px-6 w-full overflow-hidden text-white flex flex-col justify-between"
+      >
         <Image
           className="absolute -right-14 min-h-[100%] object-contain bottom-0 opacity-30"
           src={blueprint}

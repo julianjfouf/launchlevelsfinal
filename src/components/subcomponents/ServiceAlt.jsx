@@ -45,7 +45,7 @@ const ServiceAlt = ({
           </a>
         </div>
       </div>
-      <div className="bg-black relative md:px-14 px-6 w-full overflow-hidden text-white flex flex-col justify-between">
+      <div id="con" className="bg-black relative md:px-14 px-6 w-full overflow-hidden text-white flex flex-col justify-between">
         <Image
           className="absolute top-0 left-0 h-full object-contain"
           src={blueprint}
