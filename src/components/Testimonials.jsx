@@ -28,7 +28,7 @@ const Testimonials = () => {
         What our clients say about us.
       </p>
       <div className={`flex w-full duration-500`}>
-        <div className={`${index % 2 === 0 ? "flex w-full" : "hidden"}`}>
+        <div className={`${index % 2 === 1 ? "flex w-full" : "hidden"}`}>
           <TestimonialFirst
             goRight={goRight}
             goLeft={goLeft}
@@ -37,7 +37,7 @@ const Testimonials = () => {
             setIndex={setIndex}
           />
         </div>
-        <div className={`${index % 2 === 1 ? "flex w-full" : "hidden"}`}>
+        <div className={`${index % 2 === 0 ? "flex w-full" : "hidden"}`}>
           <TestimonialTwo
             goRight={goRight}
             goLeft={goLeft}

@@ -40,7 +40,7 @@ const ServiceAlt = ({
         <div className="flex flex-col text-black z-10 text-center items-center">
           <h2 className="font-bold underline-offset-4 text-xl">{subtitle1}</h2>
           <p className="max-w-lg mb-8 mt-2">{desc1}</p>
-          <a className="text-xl flex justify-center font-semibold items-center bg-black shadow-[0px_32px_32px_0px_rgba(0,0,0,0.50)] rounded-lg px-12 py-4 text-white">
+          <a href="#contact" className="text-xl flex justify-center font-semibold items-center bg-black shadow-[0px_32px_32px_0px_rgba(0,0,0,0.50)] rounded-lg px-12 py-4 text-white">
             LAUNCH
           </a>
         </div>

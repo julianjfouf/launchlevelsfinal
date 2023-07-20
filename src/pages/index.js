@@ -12,6 +12,14 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { useState } from "react";
 
+const font = localFont({
+  src: [
+    { path: "../../public/fonts/HelveticaNowDisplay-Thin.woff", weight: "300" },
+    { path: "../../public/fonts/HelveticaNowDisplay-Regular.woff", weight: "500" },
+    { path: "../../public/fonts/HelveticaNowDisplay-Medium.woff", weight: "600" },
+    { path: "../../public/fonts/HelveticaNowDisplay-Black.woff", weight: "700" },
+  ],
+});
 const inter = Inter({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -27,7 +35,7 @@ export default function Home() {
           Tracy, CA
         </title>
       </Head>
-      <main className={`${inter.className} overflow-x-hidden relative`}>
+      <main className={`${font.className} overflow-x-hidden relative`}>
         <div
           className={`absolute bg-black left-0 top-0 h-screen w-full z-20 duration-300 ${
             menu ? `translate-y-0` : `-translate-y-full`

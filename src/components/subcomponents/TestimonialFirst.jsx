@@ -41,7 +41,7 @@ const TestimonialFirst = ({ logo, image, goRight, link, goLeft }) => {
             anyone interested in expanding their brand."
           </p>
           <a
-            href="https://danosdetailing.com/"
+            href="https://malikstints.com/"
             target="_blank"
             className="text-xl flex justify-center font-semibold items-center bg-white rounded-lg px-12 py-4 text-black"
           >
