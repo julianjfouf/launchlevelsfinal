@@ -13,8 +13,8 @@ import risk from "../../public/icons/risk.png";
 
 const Services = () => {
   return (
-    <div className="relative flex flex-col items-center justify-center py-24 overflow-hidden">
-      <div className="absolute w-full h-full flex flex-col top-[-10%]">
+    <div className="relative flex flex-col items-center justify-center py-24">
+      <div className="absolute w-full h-full flex flex-col top-0 md:top-[-10%]">
         <Image
           className="z-[-3] rotate-90 min-h-[100vw] blur"
           alt="gradient"
