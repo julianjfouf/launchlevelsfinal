@@ -2,7 +2,10 @@ import React from "react";
 
 const Navbar = ({ setMenu, menu }) => {
   return (
-    <div id="home" className="absolute top-0 left-0 right-0 w-full py-6 md:px-14 px-6 flex justify-between items-center">
+    <div
+      id="home"
+      className="absolute top-0 left-0 right-0 w-full py-6 md:px-14 px-6 flex justify-between items-center"
+    >
       <svg
         width="152"
         height="59"
@@ -93,31 +96,31 @@ const Navbar = ({ setMenu, menu }) => {
       <div className="md:flex hidden gap-11 items-center text-base">
         <a
           href="#services"
-          className="relative before:transition-transform before:absolute before:left-0 before:bottom-[-2px] before:w-full before:h-[1px] before:bg-white before:scale-x-0 hover:before:scale-x-100 before:duration-300 before:origin-right hover:before:origin-left"
+          className="relative uppercase before:transition-transform before:absolute before:left-0 before:bottom-[-2px] before:w-full before:h-[1px] before:bg-white before:scale-x-0 hover:before:scale-x-100 before:duration-300 before:origin-right hover:before:origin-left"
         >
           Services
         </a>
         <a
           href="#process"
-          className="relative before:transition-transform before:absolute before:left-0 before:bottom-[-2px] before:w-full before:h-[1px] before:bg-white before:scale-x-0 hover:before:scale-x-100 before:duration-300 before:origin-right hover:before:origin-left"
+          className="relative uppercase before:transition-transform before:absolute before:left-0 before:bottom-[-2px] before:w-full before:h-[1px] before:bg-white before:scale-x-0 hover:before:scale-x-100 before:duration-300 before:origin-right hover:before:origin-left"
         >
           Process
         </a>
         <a
           href="#work"
-          className="relative before:transition-transform before:absolute before:left-0 before:bottom-[-2px] before:w-full before:h-[1px] before:bg-white before:scale-x-0 hover:before:scale-x-100 before:duration-300 before:origin-right hover:before:origin-left"
+          className="relative uppercase before:transition-transform before:absolute before:left-0 before:bottom-[-2px] before:w-full before:h-[1px] before:bg-white before:scale-x-0 hover:before:scale-x-100 before:duration-300 before:origin-right hover:before:origin-left"
         >
           Work
         </a>
         <a
           href="#testimonials"
-          className="relative before:transition-transform before:absolute before:left-0 before:bottom-[-2px] before:w-full before:h-[1px] before:bg-white before:scale-x-0 hover:before:scale-x-100 before:duration-300 before:origin-right hover:before:origin-left"
+          className="relative uppercase before:transition-transform before:absolute before:left-0 before:bottom-[-2px] before:w-full before:h-[1px] before:bg-white before:scale-x-0 hover:before:scale-x-100 before:duration-300 before:origin-right hover:before:origin-left"
         >
           Testimonials
         </a>
         <a
           href="#contact"
-          className="relative before:transition-transform before:absolute before:left-0 before:bottom-[-2px] before:w-full before:h-[1px] before:bg-white before:scale-x-0 hover:before:scale-x-100 before:duration-300 before:origin-right hover:before:origin-left"
+          className="relative uppercase before:transition-transform before:absolute before:left-0 before:bottom-[-2px] before:w-full before:h-[1px] before:bg-white before:scale-x-0 hover:before:scale-x-100 before:duration-300 before:origin-right hover:before:origin-left"
         >
           Contact
         </a>

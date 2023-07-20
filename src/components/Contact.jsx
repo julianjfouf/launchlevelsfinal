@@ -8,6 +8,11 @@ import igwhite from "../../public/icons/igwhite.png";
 import phonewhite from "../../public/icons/phonewhite.png";
 import twitterwhite from "../../public/icons/twitterwhite.png";
 import tiktokwhite from "../../public/icons/tiktokwhite.png";
+import localFont from "next/font/local";
+
+const thunder = localFont({
+  src: "../../public/fonts/Thunder-BoldLC.woff",
+});
 
 const Contact = () => {
   const formRef = useRef();
@@ -86,7 +91,7 @@ const Contact = () => {
         src={space}
         className="absolute right-0 top-0 h-full z-[-1] object-contain"
       />
-      <h1 className="lg:text-9xl md:text-7xl text-5xl font-bold uppercase text-center">
+      <h1 className={`lg:text-[175px] md:text-7xl text-5xl font-bold uppercase text-center ${thunder.className} text-transparent bg-clip-text bg-gradient-to-b from-white to-black`}>
         Contact
       </h1>
       <p className="md:text-xl mt-6 mb-12 text-center">Get in touch with us.</p>

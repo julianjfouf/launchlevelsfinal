@@ -10,10 +10,17 @@ import help from "../../public/icons/help.png";
 import team from "../../public/icons/team.png";
 import strategy from "../../public/icons/strategy.png";
 import risk from "../../public/icons/risk.png";
+import localFont from "next/font/local";
 
+const thunder = localFont({
+  src: "../../public/fonts/Thunder-BoldLC.woff",
+});
 const Services = () => {
   return (
-    <div id="services" className="relative flex flex-col items-center justify-center py-24">
+    <div
+      id="services"
+      className="relative flex flex-col items-center justify-center py-24"
+    >
       <div className="absolute w-full h-full flex flex-col top-0 md:top-[-10%]">
         <Image
           className="z-[-3] rotate-90 min-h-[100vw] blur"
@@ -26,8 +33,12 @@ const Services = () => {
           src={bluegradient}
         />
       </div>
-      <h1 className="lg:text-9xl md:text-7xl text-5xl font-bold uppercase">Services</h1>
-      <p className="md:text-xl mt-6 mb-12">Our special selection of services.</p>
+      <h1 className={`lg:text-[175px] text-transparent bg-clip-text bg-gradient-to-b from-black from-50% to-white ${thunder.className} md:text-7xl text-5xl font-bold uppercase`}>
+        Services
+      </h1>
+      <p className="md:text-xl mt-6 mb-12">
+        Our special selection of services.
+      </p>
       <Service
         number="01"
         desc1="We help clients strengthen their brand by designing websites through

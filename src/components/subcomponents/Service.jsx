@@ -5,7 +5,7 @@ import greentop from "../../../public/assets/greentop.png";
 import greenbottom from "../../../public/assets/greenbottom.png";
 import grain from "../../../public/images/grainy.png";
 import Image from "next/image";
-import localFont from "next/font/local";
+
 
 const Service = ({
   number,
@@ -25,18 +25,18 @@ const Service = ({
       <div className="flex flex-col relative justify-center border-black px-6 md:px-14 overflow-hidden py-12 bg-green-500">
         <Image
           src={grain}
-          className="xl:absolute hidden top-0 left-0 w-full object-contain opacity-10"
+          className="absolute xl:visible invisible top-0 left-0 w-full object-contain opacity-10"
         />
         <Image
           src={greentop}
-          className="xl:absolute hidden left-0 w-full top-[-35%] object-contain mix-blend-screen saturate-200 z-10"
+          className="absolute xl:visible invisible left-0 w-full top-[-35%] object-contain mix-blend-screen saturate-200 z-10"
         />
         <Image
           src={greenbottom}
-          className="xl:absolute hidden left-0 w-full bottom-0 object-contain mix-blend-screen saturate-200 z-10"
+          className="absolute xl:visible invisible left-0 w-full bottom-0 object-contain mix-blend-screen saturate-200 z-10"
         />
         <h1
-          className={`sm:text-[240px] text-[200px] leading-[200px] text-center font-bold text-transparent bg-clip-text bg-gradient-to-b z-10 from-black`}
+          className={`sm:text-[240px] text-[200px] leading-[180px] text-center font-bold text-transparent bg-clip-text bg-gradient-to-b z-10 from-black`}
         >
           {number}
         </h1>

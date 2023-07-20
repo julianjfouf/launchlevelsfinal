@@ -24,15 +24,15 @@ const ServiceAlt = ({
       <div className="flex flex-col relative justify-center border-black px-6 md:px-14 overflow-hidden py-12 bg-sky-400">
         <Image
           src={grain}
-          className="xl:absolute hidden top-0 left-0 w-full object-contain opacity-10"
+          className="absolute xl:visible invisible top-0 left-0 w-full object-contain opacity-10"
         />
         <Image
           src={greentop}
-          className="xl:absolute hidden left-0 w-full top-[0] z-[0] object-contain mix-blend-screen saturate-200"
+          className="absolute xl:visible invisible left-0 w-full top-[0] z-[0] object-contain mix-blend-screen saturate-200"
         />
         <Image
           src={greenbottom}
-          className="xl:absolute hidden left-0 w-full bottom-0 z-[0] object-contain mix-blend-screen saturate-200"
+          className="absolute xl:visible invisible left-0 w-full bottom-0 z-[0] object-contain mix-blend-screen saturate-200"
         />
         <h1 className="sm:text-[240px] text-[200px] leading-[180px] text-center font-bold text-transparent bg-clip-text bg-gradient-to-b from-black z-10">
           {number}
@@ -40,12 +40,18 @@ const ServiceAlt = ({
         <div className="flex flex-col text-black z-10 text-center items-center">
           <h2 className="font-bold underline-offset-4 text-xl">{subtitle1}</h2>
           <p className="max-w-lg mb-8 mt-2">{desc1}</p>
-          <a href="#contact" className="text-xl flex justify-center font-semibold items-center bg-black shadow-[0px_32px_32px_0px_rgba(0,0,0,0.50)] rounded-lg px-12 py-4 text-white">
+          <a
+            href="#contact"
+            className="text-xl flex justify-center font-semibold items-center bg-black shadow-[0px_32px_32px_0px_rgba(0,0,0,0.50)] rounded-lg px-12 py-4 text-white"
+          >
             LAUNCH
           </a>
         </div>
       </div>
-      <div id="con" className="bg-black relative md:px-14 px-6 w-full overflow-hidden text-white flex flex-col justify-between">
+      <div
+        id="con"
+        className="bg-black relative md:px-14 px-6 w-full overflow-hidden text-white flex flex-col justify-between"
+      >
         <Image
           className="absolute top-0 left-0 h-full object-contain"
           src={blueprint}

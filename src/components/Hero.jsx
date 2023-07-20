@@ -5,6 +5,11 @@ import bg from "../../public/images/grainygradient.png";
 import Image from "next/image";
 import Projects from "./subcomponents/Projects";
 import Logos from "./subcomponents/Logos";
+import localFont from "next/font/local";
+
+const thunder = localFont({
+  src: "../../public/fonts/Thunder-ExtraBoldLC.woff",
+});
 
 const Hero = ({ setMenu, menu }) => {
   return (
@@ -16,7 +21,9 @@ const Hero = ({ setMenu, menu }) => {
       <div className="bg-black z-[-3] absolute left-0 right-0 top-0 bottom-0"></div>
       <Navbar setMenu={setMenu} menu={menu} />
       <div className="relative font-bold">
-        <h1 className="xl:text-[180px] md:text-[140px] text-center xl:leading-[140px] md:leading-[120px] text-6xl tracking-tighter">
+        <h1
+          className={`xl:text-[240px] md:text-[200px] text-center xl:leading-[180px] md:leading-[160px] text-9xl leading-[100px] ${thunder.className} text-transparent bg-clip-text bg-gradient-to-b from-black via-white to-black`}
+        >
           LAUNCH <br /> LEVELS
         </h1>
         <Image
@@ -24,12 +31,12 @@ const Hero = ({ setMenu, menu }) => {
           src={rings}
         />
       </div>
-      <p className="max-w-lg my-12 md:text-xl px-6">
-        <b>Launch</b> your business to the next <b>Level</b>.
+      <p className="max-w-lg my-12 md:text-4xl px-6">
+        <i>launch</i> your business to the next <i>level</i>
       </p>
       <a
         href="#contact"
-        className="md:text-4xl text-xl bg-black shadow-[0px_32px_32px_0px_rgba(0,0,0,0.50)] rounded-lg px-12 py-4 font-semibold"
+        className="md:text-6xl text-xl bg-black/60 rounded-full shadow-[0px_32px_32px_0px_rgba(0,0,0,0.50)] px-6 py-3 font-semibold"
       >
         START
       </a>
