@@ -42,7 +42,7 @@ const ServiceAlt = ({
           <p className="max-w-lg mb-8 mt-2">{desc1}</p>
           <a
             href="#contact"
-            className="text-xl flex justify-center font-semibold items-center bg-black shadow-[0px_32px_32px_0px_rgba(0,0,0,0.50)] rounded-lg px-12 py-4 text-white"
+            className="md:text-4xl flex justify-center font-semibold items-center bg-black shadow-[0px_32px_32px_0px_rgba(0,0,0,0.00)] rounded-full px-6 py-3 text-white"
           >
             LAUNCH
           </a>
