@@ -29,7 +29,7 @@ const ServiceAlt = ({
       <div
         style={{
           background:
-            "linear-gradient(0deg, #040404 0%, #0F0D0D 0%, rgba(116, 116, 116, 0.00) 100%), #054B70",
+            "linear-gradient(180deg, #216A85 0%, #1E2B2A 100%)",
         }}
         className="flex flex-col relative justify-center px-6 md:px-14 overflow-hidden py-12"
       >

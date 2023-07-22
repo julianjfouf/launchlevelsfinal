@@ -29,7 +29,7 @@ const Service = ({
       <div
         style={{
           background:
-            "linear-gradient(0deg, #040404 0%, #0F0D0D 0%, rgba(116, 116, 116, 0.00) 100%), #0D9E24",
+            "linear-gradient(180deg, #1F842E 0%, #1F2B1E 100%)",
         }}
         className="flex flex-col relative justify-center border-black px-6 md:px-14 overflow-hidden py-12"
       >
