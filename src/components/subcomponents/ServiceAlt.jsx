@@ -23,13 +23,13 @@ const ServiceAlt = ({
   desc3,
   subtitle3,
   desc4,
+  func,
 }) => {
   return (
     <div className="flex w-full h-full xl:flex-row-reverse flex-col">
       <div
         style={{
-          background:
-            "linear-gradient(180deg, #216A85 0%, #1E2B2A 100%)",
+          background: "linear-gradient(180deg, #216A85 0%, #1E2B2A 100%)",
         }}
         className="flex flex-col relative justify-center px-6 md:px-14 overflow-hidden py-12"
       >
@@ -46,6 +46,7 @@ const ServiceAlt = ({
           <h2 className="font-bold underline-offset-4 text-xl">{subtitle1}</h2>
           <p className="max-w-lg mb-8 mt-2">{desc1}</p>
           <a
+            onClick={() => func(true)}
             style={{
               background:
                 "linear-gradient(180deg, rgba(0, 240, 255, 0.30) 0%, rgba(126, 255, 146, 0.06) 100%)",

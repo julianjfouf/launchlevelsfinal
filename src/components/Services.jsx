@@ -15,7 +15,7 @@ import localFont from "next/font/local";
 const thunder = localFont({
   src: "../../public/fonts/Thunder-BoldLC.woff",
 });
-const Services = () => {
+const Services = ({ setOne, setTwo, setThree }) => {
   return (
     <div
       id="services"
@@ -33,13 +33,14 @@ const Services = () => {
           src={bluegradient}
         />
       </div>
-      <h1 className={`lg:text-[175px] text-transparent bg-clip-text bg-gradient-to-b from-black from-50% to-white ${thunder.className} md:text-7xl text-5xl font-bold uppercase`}>
+      <h1
+        className={`lg:text-[175px] text-transparent bg-clip-text bg-gradient-to-b from-black from-50% to-white ${thunder.className} md:text-7xl text-5xl font-bold uppercase`}
+      >
         Services
       </h1>
-      <p className="md:text-xl mb-12">
-        Our special selection of services.
-      </p>
+      <p className="md:text-xl mb-12">Our special selection of services.</p>
       <Service
+        func={setOne}
         number="01"
         desc1="We help clients strengthen their brand by designing websites through
         unique solutions. Whether you want to transform your brand or simply
@@ -61,6 +62,7 @@ const Services = () => {
         subtitle3="Designers"
       />
       <ServiceAlt
+        func={setTwo}
         number="02"
         desc1="We help your brand grow its online social media following by creating purposeful content that intentionally helps you get your message out. We do everything between video editing, graphic design, and short form content that puts your business in the best light."
         desc2="We offer you performance based short form content creation to successfully reach and engage with larger audiences. Promising top quality in-house editing, we consistently implement  creative narratives about your business increasing product demand and drive engagement."
@@ -74,6 +76,7 @@ const Services = () => {
         development={strategy}
       />
       <Service
+        func={setThree}
         number="03"
         desc1="We help you discover your brand's identity and help you get your name out there with proven Facebook lead conversion methods and social media management."
         desc2="Social media has allowed us to become more connected and networked. Our social media management delivers value based content that increases followers & brand growth to ultimately strengthen the foundation of your business."

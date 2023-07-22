@@ -14,12 +14,17 @@ const thunder = localFont({
   src: "../../public/fonts/Thunder-BoldLC.woff",
 });
 
-const Contact = () => {
+const Contact = ({
+  one,
+  setOne,
+  two,
+  setTwo,
+  three,
+  setThree,
+  four,
+  setFour,
+}) => {
   const formRef = useRef();
-  const [one, setOne] = useState(false);
-  const [two, setTwo] = useState(false);
-  const [three, setThree] = useState(false);
-  const [four, setFour] = useState(false);
   const [form, setForm] = useState({
     name: "",
     email: "",

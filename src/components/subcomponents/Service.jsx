@@ -23,13 +23,13 @@ const Service = ({
   desc4,
   icon1,
   icon2,
+  func,
 }) => {
   return (
     <div className="flex xl:flex-row flex-col w-full h-full">
       <div
         style={{
-          background:
-            "linear-gradient(180deg, #1F842E 0%, #1F2B1E 100%)",
+          background: "linear-gradient(180deg, #1F842E 0%, #1F2B1E 100%)",
         }}
         className="flex flex-col relative justify-center border-black px-6 md:px-14 overflow-hidden py-12"
       >
@@ -47,6 +47,7 @@ const Service = ({
           <h2 className="font-bold underline-offset-4 text-xl">{subtitle1}</h2>
           <p className="max-w-lg mb-8 mt-2">{desc1}</p>
           <a
+            onClick={() => func(true)}
             style={{
               background:
                 "linear-gradient(180deg, rgba(133, 255, 151, 0.30) 0%, rgba(126, 255, 146, 0.06) 100%)",

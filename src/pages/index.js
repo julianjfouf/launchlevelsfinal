@@ -15,9 +15,18 @@ import { useState } from "react";
 const font = localFont({
   src: [
     { path: "../../public/fonts/HelveticaNowDisplay-Thin.woff", weight: "300" },
-    { path: "../../public/fonts/HelveticaNowDisplay-Regular.woff", weight: "500" },
-    { path: "../../public/fonts/HelveticaNowDisplay-Medium.woff", weight: "600" },
-    { path: "../../public/fonts/HelveticaNowDisplay-Black.woff", weight: "700" },
+    {
+      path: "../../public/fonts/HelveticaNowDisplay-Regular.woff",
+      weight: "500",
+    },
+    {
+      path: "../../public/fonts/HelveticaNowDisplay-Medium.woff",
+      weight: "600",
+    },
+    {
+      path: "../../public/fonts/HelveticaNowDisplay-Black.woff",
+      weight: "700",
+    },
   ],
 });
 const inter = Inter({
@@ -27,6 +36,10 @@ const inter = Inter({
 
 export default function Home() {
   const [menu, setMenu] = useState(false);
+  const [one, setOne] = useState(false);
+  const [two, setTwo] = useState(false);
+  const [three, setThree] = useState(false);
+  const [four, setFour] = useState(false);
   return (
     <>
       <Head>
@@ -81,11 +94,25 @@ export default function Home() {
         </div>
         <Hero setMenu={setMenu} menu={menu} />
         <Filler />
-        <Services />
+        <Services
+          setOne={setOne}
+          setTwo={setTwo}
+          setThree={setThree}
+          setFour={setFour}
+        />
         <Process />
         <Work />
         <Testimonials />
-        <Contact />
+        <Contact
+          one={one}
+          setOne={setOne}
+          two={two}
+          setTwo={setTwo}
+          three={three}
+          setThree={setThree}
+          four={four}
+          setFour={setFour}
+        />
         <Footer />
       </main>
     </>
