@@ -2,7 +2,7 @@ import React from "react";
 import blueprint from "../../../public/images/spacepicture.png";
 import greenring from "../../../public/assets/bluering.png";
 import greentop from "../../../public/assets/bluetop.png";
-import greenbottom from "../../../public/assets/bluebottom.png";
+import greenbottom from "../../../public/assets/bbg.png";
 import grain from "../../../public/images/grainy.png";
 import Image from "next/image";
 import localFont from "next/font/local";
@@ -34,16 +34,8 @@ const ServiceAlt = ({
         className="flex flex-col relative justify-center px-6 md:px-14 overflow-hidden py-12"
       >
         <Image
-          src={grain}
-          className="absolute xl:visible invisible top-0 left-0 w-full object-contain opacity-10"
-        />
-        <Image
-          src={greentop}
-          className="absolute xl:visible invisible left-0 w-full top-[0] z-[0] object-contain mix-blend-screen saturate-200"
-        />
-        <Image
           src={greenbottom}
-          className="absolute xl:visible invisible left-0 w-full bottom-0 z-[0] object-contain mix-blend-screen saturate-200"
+          className="absolute xl:visible invisible left-0 w-full top-1/2 -translate-y-1/2 z-[0] object-contain"
         />
         <h1
           className={`sm:text-[400px] text-[200px] leading-tight text-center text-transparent bg-clip-text bg-gradient-to-b z-10 from-black to-70% ${thunder.className}`}
@@ -74,7 +66,7 @@ const ServiceAlt = ({
           src={blueprint}
         />
         <div className="z-10 flex flex-col justify-between items-end py-24 text-right">
-          <div className="lg:text-8xl md:text-6xl text-4xl flex flex-col items-start leading-tighter before:z-10 z-10 text-white font-bold relative">
+          <div className="lg:text-8xl md:text-6xl text-4xl max-w-xl flex flex-col items-start leading-tighter before:z-10 z-10 text-white font-bold relative">
             {title}
             <Image className="absolute top-0 right-0 z-[-1]" src={greenring} />
           </div>

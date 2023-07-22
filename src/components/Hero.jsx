@@ -15,6 +15,8 @@ const Hero = ({ setMenu, menu }) => {
   return (
     <div className="bg-cover overflow-hidden antialiased bg-center bg-no-repeat relative text-white text-center min-h-screen w-full flex justify-center items-center flex-col">
       <Image
+        quality={100}
+        priority
         src={bg}
         className="lg:w-full h-full spin object-cover aspect-auto top-1/2 -translate-y-1/2 absolute z-[-2] left-0"
       />

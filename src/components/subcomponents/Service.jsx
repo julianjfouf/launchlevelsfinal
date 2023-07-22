@@ -34,8 +34,9 @@ const Service = ({
         className="flex flex-col relative justify-center border-black px-6 md:px-14 overflow-hidden py-12"
       >
         <Image
+          quality={100}
           src={greenbottom}
-          className="absolute xl:visible invisible left-0 w-full bottom-0 object-contain z-10"
+          className="absolute xl:visible invisible left-0 w-full top-1/2 -translate-y-1/2 z-[0] object-contain"
         />
         <h1
           className={`sm:text-[400px] text-[200px] leading-tight text-center text-transparent bg-clip-text bg-gradient-to-b z-10 from-black to-70% ${thunder.className}`}
@@ -66,7 +67,7 @@ const Service = ({
           src={blueprint}
         />
         <div className="z-10 flex flex-col justify-between items-start py-24">
-          <div className="lg:text-8xl md:text-6xl text-4xl mainTitle flex flex-col items-start leading-tighter before:z-10 z-10 text-white font-bold relative">
+          <div className="lg:text-8xl md:text-6xl text-4xl mainTitle flex flex-col items-start leading-tighter before:z-10 z-10 text-white font-bold relative max-w-xl">
             {title}
             <Image className="absolute top-0 z-[-1]" src={greenring} />
           </div>
