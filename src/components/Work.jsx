@@ -10,13 +10,13 @@ const thunder = localFont({
 });
 const Work = () => {
   return (
-    <div id="work" className="flex flex-col items-center md:px-14 px-6 py-24">
+    <div id="work" className="flex flex-col items-center md:px-14 px-6 pb-24">
       <h1
         className={`lg:text-[175px] text-transparent bg-clip-text bg-gradient-to-b from-black from-50% to-white ${thunder.className} md:text-7xl text-5xl font-bold uppercase`}
       >
         WORK
       </h1>
-      <p className="md:text-xl mt-6 mb-12">Our special selection of work.</p>
+      <p className="md:text-xl mb-12">Our special selection of work.</p>
       <div className="flex flex-wrap w-full">
         <div className="xl:w-1/2 w-full xl:pr-2.5 pb-2.5">
           <div className="bg-[url(/projects/display1.png)] sm:bg-cover bg-contain bg-top bg-no-repeat md:h-[100vh] sm:h-[75vh] h-[50vh] w-full aspect-auto object-contain" />

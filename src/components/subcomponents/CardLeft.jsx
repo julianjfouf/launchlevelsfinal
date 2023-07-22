@@ -10,15 +10,23 @@ const CardLeft = ({ number, title, description, image }) => {
         }`}
       >
         <div className="flex flex-col md:items-end items-center md:text-right text-center w-full relative">
-          <div className="h-5 w-5 bg-green-500 md:flex hidden rounded-full border-[2px] border-black absolute top-1/2 -translate-y-1/2 right-[-58px]"></div>
+          <div className="h-20 w-5 bg-[#FCFAE7] md:flex hidden rounded-full absolute top-1/2 -translate-y-1/2 right-[-58px]"></div>
           <div className=" flex flex-col md:items-end items-center bg-white md:bg-transparent md:py-0 py-6">
-            <h3 className="font-bold xl:text-8xl md:text-5xl text-4xl">{title}</h3>
-            <p className="max-w-lg md:text-right text-center mt-6">{description}</p>
+            <h3 className="font-bold xl:text-8xl md:text-5xl text-4xl">
+              {title}
+            </h3>
+            <p className="max-w-lg md:text-right text-center mt-6">
+              {description}
+            </p>
           </div>
         </div>
       </div>
-      <div className={`md:w-1/2 md:pl-12 flex md:justify-start justify-center z-10 ${number == "01" ? `md:pb-12 pt-12` : `md:py-12 pt-12`}`}>
-        <Image src={image} />
+      <div
+        className={`md:w-1/2 md:pl-12 flex md:justify-start justify-center z-10 ${
+          number == "01" ? `md:pb-12 md:pt-0 pt-12` : `md:py-12 pt-12`
+        }`}
+      >
+        <Image src={image} className="h-full object-contain" />
       </div>
     </div>
   );

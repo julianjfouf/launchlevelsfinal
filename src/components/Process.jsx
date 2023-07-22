@@ -17,14 +17,14 @@ const Process = () => {
   return (
     <div
       id="process"
-      className="flex flex-col items-center justify-center py-24 px-6 md:px-14"
+      className="flex flex-col items-center justify-center pb-24 px-6 md:px-14"
     >
       <h1
         className={`lg:text-[175px] text-transparent bg-clip-text bg-gradient-to-b from-black from-50% to-white ${thunder.className} md:text-7xl text-5xl font-bold uppercase text-center`}
       >
         THE PROCESS
       </h1>
-      <p className="md:text-xl mt-6 mb-12">Where form meets function</p>
+      <p className="md:text-xl mb-12">Where form meets function</p>
       <div className="flex flex-col relative">
         <div className="bg-black w-[2px] h-full absolute top-0 left-1/2 -translate-x-1/2"></div>
         <CardLeft

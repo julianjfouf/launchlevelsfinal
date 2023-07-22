@@ -36,7 +36,7 @@ const Services = () => {
       <h1 className={`lg:text-[175px] text-transparent bg-clip-text bg-gradient-to-b from-black from-50% to-white ${thunder.className} md:text-7xl text-5xl font-bold uppercase`}>
         Services
       </h1>
-      <p className="md:text-xl mt-6 mb-12">
+      <p className="md:text-xl mb-12">
         Our special selection of services.
       </p>
       <Service
@@ -57,8 +57,8 @@ const Services = () => {
         icon2={development}
         title="WEB DESIGN & DEVELOPMENT"
         subtitle1="What we do"
-        subtitle2="DEVELOPERS"
-        subtitle3="DESIGNERS"
+        subtitle2="Developers"
+        subtitle3="Designers"
       />
       <ServiceAlt
         number="02"
@@ -68,8 +68,8 @@ const Services = () => {
         desc4="We will work with you every step of the way to make sure you are on the same page as us on what your brand needs most to unlock the next level of social media influence and customer engagement."
         title="CONTENT CREATION"
         subtitle1="What we do"
-        subtitle2="STRATEGISTS"
-        subtitle3="COLLABORATORS"
+        subtitle2="Strategists"
+        subtitle3="Collaborators"
         design={team}
         development={strategy}
       />
@@ -81,8 +81,8 @@ const Services = () => {
         desc4="We do not receive payment until you are fully satisfied with our services."
         title="SOCIAL MEDIA"
         subtitle1="What we do"
-        subtitle2="RELIABLE"
-        subtitle3="RISK-FREE"
+        subtitle2="Reliable"
+        subtitle3="Risk-free"
         icon1={help}
         icon2={risk}
       />

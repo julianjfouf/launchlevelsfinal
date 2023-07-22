@@ -10,8 +10,7 @@ const CardRight = ({ title, number, description, image }) => {
         }`}
       >
         <div className="flex flex-col md:items-start items-center text-left w-full relative">
-          <div className="h-5 w-5 bg-sky-300 rounded-full border-[2px] border-black absolute top-1/2 -translate-y-1/2 left-[-58px]"></div>
-
+          <div className="h-20 w-5 bg-[#FCFAE7] rounded-full absolute top-1/2 -translate-y-1/2 left-[-58px]"></div>
           <div className=" md:text-left text-center md:bg-transparent bg-white md:py-0 py-6">
             <h3 className="xl:text-8xl md:text-5xl text-3xl font-bold">
               {title}
@@ -22,7 +21,7 @@ const CardRight = ({ title, number, description, image }) => {
       </div>
       <div
         className={`md:w-1/2 flex md:justify-end justify-center z-10 md:pr-12 ${
-          number == "04" ? `md:pb-12 pt-12` : `md:py-12 pt-12`
+          number == "04" ? `md:pb-12 md:pt-0 pt-12` : `md:py-12 pt-12`
         }`}
       >
         <Image src={image} className="h-full object-contain" />

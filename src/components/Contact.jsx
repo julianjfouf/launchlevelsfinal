@@ -86,12 +86,17 @@ const Contact = () => {
       );
   };
   return (
-    <div id="contact" className="py-24 px-6 md:px-14 bg-black text-white relative z-10">
+    <div
+      id="contact"
+      className="py-24 px-6 md:px-14 bg-black text-white relative z-10"
+    >
       <Image
         src={space}
         className="absolute right-0 top-0 h-full z-[-1] object-contain"
       />
-      <h1 className={`lg:text-[175px] md:text-7xl text-5xl font-bold uppercase text-center ${thunder.className} text-transparent bg-clip-text bg-gradient-to-b from-white to-black`}>
+      <h1
+        className={`lg:text-[175px] md:text-7xl text-5xl font-bold uppercase text-center ${thunder.className} text-transparent bg-clip-text bg-gradient-to-b from-white to-black`}
+      >
         Contact
       </h1>
       <p className="md:text-xl mt-6 mb-12 text-center">Get in touch with us.</p>
@@ -171,29 +176,34 @@ const Contact = () => {
             Send
           </button>
         </form>
-        <div className="xl:w-1/2 xl:pl-12 pt-12 hidden lg:flex flex-col gap-6 items-start font-bold md:text-xl">
-          <div className="flex items-center gap-3">
-            <Image src={emailwhite} className="h-12 w-12 object-contain" />
-            <p>launchlevels@gmail.com</p>
-          </div>
-          <div className="flex items-center gap-3">
-            <Image src={phonewhite} className="h-12 w-12 object-contain" />
-            <p>(209) 278-9098</p>
-          </div>
-          <div>
-            <h1 className="mb-3">Connect with us</h1>
-            <div className="flex gap-3">
-              <a href="https://www.instagram.com/launchlevels/" target="_blank">
-                <Image className="h-6 w-6" src={igwhite} />
-              </a>
-              <a
-                href="https://www.facebook.com/profile.php?id=100094516539154"
-                target="_blank"
-              >
-                <Image className="h-6 w-6" src={fbwhite} />
-              </a>
-              {/* <Image className="h-6 w-6" src={twitterwhite} />
+        <div className="xl:w-1/2 hidden lg:flex justify-center font-bold md:text-xl">
+          <div className="xl:pl-12 hidden lg:flex flex-col gap-6">
+            <div className="flex items-center gap-3">
+              <Image src={emailwhite} className="h-12 w-12 object-contain" />
+              <p>launchlevels@gmail.com</p>
+            </div>
+            <div className="flex items-center gap-3">
+              <Image src={phonewhite} className="h-12 w-12 object-contain" />
+              <p>(209) 278-9098</p>
+            </div>
+            <div>
+              <h1 className="mb-3">Connect with us</h1>
+              <div className="flex gap-3">
+                <a
+                  href="https://www.instagram.com/launchlevels/"
+                  target="_blank"
+                >
+                  <Image className="h-6 w-6" src={igwhite} />
+                </a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100094516539154"
+                  target="_blank"
+                >
+                  <Image className="h-6 w-6" src={fbwhite} />
+                </a>
+                {/* <Image className="h-6 w-6" src={twitterwhite} />
               <Image className="h-6 w-6" src={tiktokwhite} /> */}
+              </div>
             </div>
           </div>
         </div>

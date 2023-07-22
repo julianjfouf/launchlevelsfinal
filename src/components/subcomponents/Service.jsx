@@ -5,7 +5,11 @@ import greentop from "../../../public/assets/greentop.png";
 import greenbottom from "../../../public/assets/greenbottom.png";
 import grain from "../../../public/images/grainy.png";
 import Image from "next/image";
+import localFont from "next/font/local";
 
+const thunder = localFont({
+  src: "../../../public/fonts/Thunder-LC.woff",
+});
 
 const Service = ({
   number,
@@ -22,10 +26,16 @@ const Service = ({
 }) => {
   return (
     <div className="flex xl:flex-row flex-col w-full h-full">
-      <div className="flex flex-col relative justify-center border-black px-6 md:px-14 overflow-hidden py-12 bg-green-500">
+      <div
+        style={{
+          background:
+            "linear-gradient(0deg, #040404 0%, #0F0D0D 0%, rgba(116, 116, 116, 0.00) 100%), #0D9E24",
+        }}
+        className="flex flex-col relative justify-center border-black px-6 md:px-14 overflow-hidden py-12"
+      >
         <Image
           src={grain}
-          className="absolute xl:visible invisible top-0 left-0 w-full object-contain opacity-10"
+          className="absolute xl:visible invisible top-0 left-0 h-full opacity-10"
         />
         <Image
           src={greentop}
@@ -36,16 +46,20 @@ const Service = ({
           className="absolute xl:visible invisible left-0 w-full bottom-0 object-contain mix-blend-screen saturate-200 z-10"
         />
         <h1
-          className={`sm:text-[240px] text-[200px] leading-[180px] text-center font-bold text-transparent bg-clip-text bg-gradient-to-b z-10 from-black`}
+          className={`sm:text-[400px] text-[200px] leading-tight text-center text-transparent bg-clip-text bg-gradient-to-b z-10 from-black to-70% ${thunder.className}`}
         >
           {number}
         </h1>
-        <div className="flex flex-col text-black z-10 text-center items-center">
+        <div className="flex flex-col text-white z-10 text-center items-center md:-mt-48 -mt-24">
           <h2 className="font-bold underline-offset-4 text-xl">{subtitle1}</h2>
           <p className="max-w-lg mb-8 mt-2">{desc1}</p>
           <a
+            style={{
+              background:
+                "linear-gradient(180deg, rgba(133, 255, 151, 0.30) 0%, rgba(126, 255, 146, 0.06) 100%)",
+            }}
             href="#contact"
-            className="md:text-4xl flex justify-center font-semibold items-center bg-black shadow-[0px_32px_32px_0px_rgba(0,0,0,0.00)] px-6 py-3 rounded-full bg-black/60 text-white"
+            className="md:text-4xl before:bg-white before:absolute relative before:bottom-0 before:left-0 before:w-full before:h-full before:rounded-full before:scale-x-0 hover:before:scale-x-100 before:duration-300 before:transition-transform before:origin-right hover:before:origin-left before:z-[-1] z-10 hover:text-green-800 overflow-hidden duration-300 flex justify-center font-semibold items-center px-6 py-3 rounded-full text-white"
           >
             LAUNCH
           </a>
@@ -75,8 +89,12 @@ const Service = ({
                 <div className="bg-white w-2.5 h-[2px] rotate-90 -translate-y-full sm:flex hidden"></div>
               </div>
               <Image src={icon1} className="h-14 w-14 object-contain mb-1" />
-              <h3 className="font-bold text-green-500">
-                We are <span className="uppercase">{subtitle2}</span>
+              <h3 className="text-[#78A55A] uppercase">
+                We are{" "}
+                <span className="normal-case font-bold text-white">
+                  <br />
+                  {subtitle2}
+                </span>
               </h3>
               <p className="">{desc3}</p>
             </div>
@@ -86,8 +104,12 @@ const Service = ({
                 <div className="bg-white w-2.5 h-[2px] rotate-90 -translate-y-full sm:flex hidden"></div>
               </div>
               <Image src={icon2} className="h-14 w-14 object-contain mb-1" />
-              <h3 className="font-bold text-green-500">
-                We are <span className="uppercase">{subtitle3}</span>
+              <h3 className="text-[#78A55A] uppercase">
+                We are{" "}
+                <span className="normal-case font-bold text-white">
+                  <br />
+                  {subtitle3}
+                </span>
               </h3>
               <p className="">{desc4}</p>
             </div>
