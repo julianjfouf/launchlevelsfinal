@@ -72,7 +72,7 @@ const Service = ({
             {title}
             <Image className="absolute top-0 z-[-1]" src={greenring} />
           </div>
-          <p className="max-w-lg mt-12 z-10 md:text-base">{desc2}</p>
+          <p className="max-w-xl mt-12 z-10 text-xl">{desc2}</p>
         </div>
         <div className="w-full h-[2px] bg-white sm:flex hidden z-10"></div>
         <div className="z-10 sm:py-24 pb-24 relative">

@@ -10,12 +10,12 @@ const CardLeft = ({ number, title, description, image }) => {
         }`}
       >
         <div className="flex flex-col md:items-end items-center md:text-right text-center w-full relative">
-          <div className="h-20 w-5 bg-[#FCFAE7] md:flex hidden rounded-full absolute top-1/2 -translate-y-1/2 right-[-58px]"></div>
+          <div className="h-3 w-3 bg-black md:flex hidden rounded-full absolute top-1/2 -translate-y-1/2 right-[-54px]"></div>
           <div className=" flex flex-col md:items-end items-center bg-white md:bg-transparent md:py-0 py-6">
             <h3 className="font-bold xl:text-8xl md:text-5xl text-4xl">
               {title}
             </h3>
-            <p className="max-w-lg md:text-right text-center mt-6">
+            <p className="max-w-lg md:text-right text-center mt-6 md:text-xl">
               {description}
             </p>
           </div>

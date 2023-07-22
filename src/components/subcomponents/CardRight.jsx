@@ -10,12 +10,12 @@ const CardRight = ({ title, number, description, image }) => {
         }`}
       >
         <div className="flex flex-col md:items-start items-center text-left w-full relative">
-          <div className="h-20 w-5 bg-[#FCFAE7] rounded-full absolute top-1/2 -translate-y-1/2 left-[-58px]"></div>
+          <div className="h-3 w-3 bg-black rounded-full absolute top-1/2 -translate-y-1/2 left-[-54px]"></div>
           <div className=" md:text-left text-center md:bg-transparent bg-white md:py-0 py-6">
             <h3 className="xl:text-8xl md:text-5xl text-3xl font-bold">
               {title}
             </h3>
-            <p className="max-w-lg mt-6">{description}</p>
+            <p className="max-w-lg mt-6 md:text-xl">{description}</p>
           </div>
         </div>
       </div>

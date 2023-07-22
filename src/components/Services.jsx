@@ -42,18 +42,10 @@ const Services = ({ setOne, setTwo, setThree }) => {
       <Service
         func={setOne}
         number="01"
-        desc1="We help clients strengthen their brand by designing websites through
-        unique solutions. Whether you want to transform your brand or simply
-        increase its size, we will help you realize your vision."
-        desc2="Everyone is tired of seeing boring template websites. With our
-        graphic design help, we can help your company (small or large) to
-        create unique engaging work to increase brand awareness, improve
-        lead conversion, and organically optimize your system."
-        desc3="We code all of our websites to ensure that your website is made
-        with the most up-to-date software and best industry practices."
-        desc4="We design your website using the best graphic design procedures
-        so that your website is both modern and perfect for you and your
-        brand."
+        desc1="Crafting captivating websites that perform flawlessly with innovative code. Elevate your brand digitally with Launch Levels."
+        desc2="Tired of boring template websites? Our team can create engaging work for increased lead conversion and brand awareness."
+        desc3="Unleashing high-quality software for the digital space. Join us in crafting remarkable online experiences."
+        desc4="Unlock digital brilliance with our UI/UX designs. Elevate your website experience."
         icon1={design}
         icon2={development}
         title="WEB DESIGN & DEVELOPMENT"
@@ -65,7 +57,7 @@ const Services = ({ setOne, setTwo, setThree }) => {
         func={setTwo}
         number="02"
         desc1="We help your brand grow its online social media following by creating purposeful content that intentionally helps you get your message out. We do everything between video editing, graphic design, and short form content that puts your business in the best light."
-        desc2="We offer you performance based short form content creation to successfully reach and engage with larger audiences. Promising top quality in-house editing, we consistently implement  creative narratives about your business increasing product demand and drive engagement."
+        desc2="We offer you performance based short form content creation to successfully reach and engage with larger audiences."
         desc3="Through our various strategies, we are able to convert your obstacles into opportunities for digital growth."
         desc4="We will work with you every step of the way to make sure you are on the same page as us on what your brand needs most to unlock the next level of social media influence and customer engagement."
         title="CONTENT CREATION"
@@ -79,7 +71,7 @@ const Services = ({ setOne, setTwo, setThree }) => {
         func={setThree}
         number="03"
         desc1="We help you discover your brand's identity and help you get your name out there with proven Facebook lead conversion methods and social media management."
-        desc2="Social media has allowed us to become more connected and networked. Our social media management delivers value based content that increases followers & brand growth to ultimately strengthen the foundation of your business."
+        desc2="We deliver value based content that increases followers & brand growth to ultimately strengthen the foundation of your business."
         desc3="We work with some of the best leaders and local businesses in our community which has enabled us to develop our ability to understand you and your needs."
         desc4="We do not receive payment until you are fully satisfied with our services."
         title="SOCIAL MEDIA"

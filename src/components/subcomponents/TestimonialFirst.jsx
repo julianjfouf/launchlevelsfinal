@@ -14,13 +14,13 @@ const TestimonialFirst = ({ logo, image, goRight, link, goLeft, review }) => {
         <div className="max-w-[25vw] w-full max-h-[75vh] flex justify-center overflow-hidden z-10">
           <Image className="object-contain z-10 w-full md:h-full" src={image} />
         </div>
-        <div className="flex flex-col items-center relative w-full h-full md:items-center xl:pl-24 xl:mt-0 mt-12 z-10">
+        <div className="flex flex-col items-center relative h-full md:items-center xl:pl-24 xl:mt-0 mt-12 z-10">
           <div className="bg-green-500 h-[2px] w-1/2 left-0 top-0 z-10"></div>
           <h1 className="lg:text-8xl xl:text-6xl text-4xl font-bold pt-6 z-10">
-            Dano's Detailing
+            Malik's Tints
           </h1>
           <p className="lg:text-4xl text-neutral-400 z-10">
-            Mobile Car Detailing
+            Mobile Car Tinting
           </p>
           <div className="flex items-center gap-1 my-6 z-10">
             <Image className="h-5 w-5 object-contain" src={star} />

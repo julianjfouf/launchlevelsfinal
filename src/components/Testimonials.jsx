@@ -39,24 +39,9 @@ const Testimonials = () => {
       <p className="md:text-xl mb-12 text-center">
         What our clients say about us.
       </p>
-      <div className={`flex w-full duration-500`}>
+      <div className={`flex w-full justify-center duration-500`}>
         <div
-          className={`${Math.abs(index % 2) === 1 ? "flex w-full" : "hidden"}`}
-        >
-          <TestimonialFirst
-            goRight={goRight}
-            goLeft={goLeft}
-            logo={project1}
-            image={dano}
-            setIndex={setIndex}
-            review="These guys have absolutely transformed my entire brand from zero to
-            hero. I don't know what I would have done without their generous
-            amount of help and guidance. I definitely recommend these guys to
-            anyone interested in expanding their brand."
-          />
-        </div>
-        <div
-          className={`${Math.abs(index % 2) === 0 ? "flex w-full" : "hidden"}`}
+          className={`${Math.abs(index % 1) === 0 ? "flex w-full justify-center" : "hidden"}`}
         >
           <TestimonialTwo
             goRight={goRight}
