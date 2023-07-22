@@ -2,7 +2,7 @@ import React from "react";
 import blueprint from "../../../public/images/blueprint.png";
 import greenring from "../../../public/assets/greenring.png";
 import greentop from "../../../public/assets/greentop.png";
-import greenbottom from "../../../public/assets/greenbottom.png";
+import greenbottom from "../../../public/assets/gbg.png";
 import grain from "../../../public/images/grainy.png";
 import Image from "next/image";
 import localFont from "next/font/local";
@@ -34,16 +34,8 @@ const Service = ({
         className="flex flex-col relative justify-center border-black px-6 md:px-14 overflow-hidden py-12"
       >
         <Image
-          src={grain}
-          className="absolute xl:visible invisible top-0 left-0 h-full opacity-10"
-        />
-        <Image
-          src={greentop}
-          className="absolute xl:visible invisible left-0 w-full top-[-35%] object-contain mix-blend-screen saturate-200 z-10"
-        />
-        <Image
           src={greenbottom}
-          className="absolute xl:visible invisible left-0 w-full bottom-0 object-contain mix-blend-screen saturate-200 z-10"
+          className="absolute xl:visible invisible left-0 w-full bottom-0 object-contain z-10"
         />
         <h1
           className={`sm:text-[400px] text-[200px] leading-tight text-center text-transparent bg-clip-text bg-gradient-to-b z-10 from-black to-70% ${thunder.className}`}
