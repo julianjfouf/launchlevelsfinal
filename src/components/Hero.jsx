@@ -59,7 +59,7 @@ const Hero = ({ setMenu, menu }) => {
         <i>launch</i> your business to the <br /> next <i>level</i>
       </p>
       <a
-        href="#contact"
+        href="#services"
         className="md:text-6xl text-2xl before:bg-white before:absolute relative before:bottom-0 before:left-0 before:w-full before:h-full before:rounded-full before:scale-x-0 hover:before:scale-x-100 before:duration-300 before:transition-transform before:origin-right hover:before:origin-left before:z-[-1] z-10 hover:text-black overflow-hidden duration-300 bg-black/60 rounded-full px-6 py-3 font-semibold"
       >
         START

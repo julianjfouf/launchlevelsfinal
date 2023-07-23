@@ -51,18 +51,33 @@ const TestimonialTwo = ({ logo, image, goLeft, goRight, link }) => {
                 Mobile Car Detailing
               </p>
               <div className="flex gap-1">
-                <Image
-                  src={one}
-                  className="xl:h-8 h-6 xl:w-8 w-6 object-contain"
-                />
-                <Image
-                  src={two}
-                  className="xl:h-8 h-6 xl:w-8 w-6 object-contain"
-                />
-                <Image
-                  src={three}
-                  className="xl:h-8 h-6 xl:w-8 w-6 object-contain"
-                />
+                <a
+                  href="https://www.instagram.com/danosmobiledetailing/"
+                  target="_blank"
+                >
+                  <Image
+                    src={one}
+                    className="xl:h-8 h-6 xl:w-8 w-6 object-contain"
+                  />
+                </a>
+                <a
+                  href="https://www.facebook.com/nando.zepeda.31"
+                  target="_blank"
+                >
+                  <Image
+                    src={two}
+                    className="xl:h-8 h-6 xl:w-8 w-6 object-contain"
+                  />
+                </a>
+                <a
+                  href="https://www.google.com/localservices/prolist?g2lbs=AP8S6EMEbik8xeU1o_1VNvQ81RFlXne0rxUMjWaffxq0z57YSowAQegd8aj2VS8DWVIvjKO4_vWFrQZL6uvish_sgm-bjoR2gZf8idQUIVG_Z9GS_CJP9C_ouTK4tOU4LkJEhw71Dvbh&hl=en-US&gl=us&cs=1&ssta=1&q=danos%20detailing&oq=danos%20detailing&slp=MgA6HENoTUltb2lyaWZpamdBTVZsaTZ0QmgwR3ZnV0pSAggCYAB6ugFDZzlrWVc1dmN5QmtaWFJoYVd4cGJtZEk4ZXJhdHRPNWdJQUlXaGtRQUJBQkdBQVlBU0lQWkdGdWIzTWdaR1YwWVdsc2FXNW5rZ0VWWTJGeVgyUmxkR0ZwYkdsdVoxOXpaWEoyYVdObHFnRTNFQUV5SGhBQklob0NfcF9FcGhySkhiVTZlRGVSS2U2anNnVDNsZVRORm0yUW9qSVRFQUlpRDJSaGJtOXpJR1JsZEdGcGJHbHVaLUFCQUGSASoKDS9nLzExdG53ZmZmY2sKDS9nLzExazRwNHQ0d3ASBBICCAESBAoCCAE%3D&src=2&spp=Cg0vZy8xMXRud2ZmZmNrOpgBV2hrUUFCQUJHQUFZQVNJUFpHRnViM01nWkdWMFlXbHNhVzVua2dFVlkyRnlYMlJsZEdGcGJHbHVaMTl6WlhKMmFXTmxtZ0VBcWdFM0VBRXlIaEFCSWhvQ19wX0VwaHJKSGJVNmVEZVJLZTZqc2dUM2xlVE5GbTJRb2pJVEVBSWlEMlJoYm05eklHUmxkR0ZwYkdsdVp3PT0%3D&serdesk=1&lrlstt=1690084717952&ved=2ahUKEwiQ-qGJ-KOAAxVuMDQIHQ5GDuwQvS56BAgYEAE&scp=ChpnY2lkOmNhcl9kZXRhaWxpbmdfc2VydmljZRJTEhIJTZlVClkUkIARmRSv4HlvRugiJURhbm_igJlzIERldGFpbGluZywgMzI1NyBSZWRicmlkZ2UgUmQqFA0z0nsWFcswmLcdM9J7FiXLMJi3MAAaD2Rhbm9zIGRldGFpbGluZyIPZGFub3MgZGV0YWlsaW5nKhVDYXIgZGV0YWlsaW5nIHNlcnZpY2U%3D"
+                  target="_blank"
+                >
+                  <Image
+                    src={three}
+                    className="xl:h-8 h-6 xl:w-8 w-6 object-contain"
+                  />
+                </a>
               </div>
             </div>
           </div>
