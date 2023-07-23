@@ -44,13 +44,13 @@ const Service = ({
           {number}
         </h1>
         <div className="flex flex-col text-white z-10 text-center items-center md:-mt-48 -mt-24">
-          <h2 className="font-bold underline-offset-4 text-xl">{subtitle1}</h2>
-          <p className="max-w-lg mb-8 mt-2">{desc1}</p>
+          <h2 className="font-bold underline-offset-4 text-3xl">{subtitle1}</h2>
+          <p className="max-w-lg mb-8 mt-2 text-xl">{desc1}</p>
           <a
             onClick={() => func(true)}
             style={{
               background:
-                "linear-gradient(180deg, rgba(133, 255, 151, 0.30) 0%, rgba(126, 255, 146, 0.06) 100%)",
+                "linear-gradient(180deg, rgba(133, 255, 151, 0.75) 0%, rgba(126, 255, 146, 0.06) 100%)",
             }}
             href="#contact"
             className="md:text-4xl before:bg-white before:absolute relative before:bottom-0 before:left-0 before:w-full before:h-full before:rounded-full before:scale-x-0 hover:before:scale-x-100 before:duration-300 before:transition-transform before:origin-right hover:before:origin-left before:z-[-1] z-10 hover:text-green-800 overflow-hidden duration-300 flex justify-center font-semibold items-center px-6 py-3 rounded-full text-white"
@@ -72,7 +72,7 @@ const Service = ({
             {title}
             <Image className="absolute top-0 z-[-1]" src={greenring} />
           </div>
-          <p className="max-w-xl mt-12 z-10 text-xl">{desc2}</p>
+          <p className="max-w-xl mt-12 z-10 md:text-2xl">{desc2}</p>
         </div>
         <div className="w-full h-[2px] bg-white sm:flex hidden z-10"></div>
         <div className="z-10 sm:py-24 pb-24 relative">

@@ -51,16 +51,16 @@ const Hero = ({ setMenu, menu }) => {
           </span>
         </h1>
         <Image
-          className="absolute bottom-0 right-0 translate-y-3/4 z-[-1]"
+          className="absolute bottom-0 right-0 md:translate-y-3/4 translate-y-full z-[-1]"
           src={rings}
         />
       </div>
-      <p className="max-w-lg my-12 md:text-4xl px-6">
-        <i>launch</i> your business to the next <i>level</i>
+      <p className="max-w-lg my-12 mb-20 md:text-4xl text-2xl px-6">
+        <i>launch</i> your business to the <br /> next <i>level</i>
       </p>
       <a
         href="#contact"
-        className="md:text-6xl text-xl before:bg-white before:absolute relative before:bottom-0 before:left-0 before:w-full before:h-full before:rounded-full before:scale-x-0 hover:before:scale-x-100 before:duration-300 before:transition-transform before:origin-right hover:before:origin-left before:z-[-1] z-10 hover:text-black overflow-hidden duration-300 bg-black/60 rounded-full px-6 py-3 font-semibold"
+        className="md:text-6xl text-2xl before:bg-white before:absolute relative before:bottom-0 before:left-0 before:w-full before:h-full before:rounded-full before:scale-x-0 hover:before:scale-x-100 before:duration-300 before:transition-transform before:origin-right hover:before:origin-left before:z-[-1] z-10 hover:text-black overflow-hidden duration-300 bg-black/60 rounded-full px-6 py-3 font-semibold"
       >
         START
       </a>

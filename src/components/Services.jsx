@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import gradient from "../../public/images/whitegrainygradient.png";
-import bluegradient from "../../public/images/bluegradient.png";
 import design from "../../public/icons/design.png";
 import development from "../../public/icons/development.png";
 import Service from "./subcomponents/Service";
@@ -19,7 +18,7 @@ const Services = ({ setOne, setTwo, setThree }) => {
   return (
     <div
       id="services"
-      className="relative flex flex-col items-center justify-center py-24"
+      className="relative flex flex-col items-center justify-center pt-24"
     >
       <div className="absolute w-full h-full flex flex-col top-0">
         <Image
@@ -27,18 +26,13 @@ const Services = ({ setOne, setTwo, setThree }) => {
           alt="gradient"
           src={gradient}
         />
-        <Image
-          className="z-[-3] min-w-[100vw] blur"
-          alt="gradient"
-          src={bluegradient}
-        />
       </div>
       <h1
-        className={`lg:text-[175px] text-transparent bg-clip-text bg-gradient-to-b from-black from-50% to-white ${thunder.className} md:text-7xl text-5xl font-bold uppercase`}
+        className={`lg:text-[175px] text-transparent bg-clip-text bg-gradient-to-b from-black from-50% to-white ${thunder.className} text-[90px] font-bold uppercase`}
       >
         Services
       </h1>
-      <p className="md:text-xl mb-12">Our special selection of services.</p>
+      <p className="md:text-3xl text-center font-semibold mb-16 -mt-4">Our special selection of services.</p>
       <Service
         func={setOne}
         number="01"
@@ -56,10 +50,10 @@ const Services = ({ setOne, setTwo, setThree }) => {
       <ServiceAlt
         func={setTwo}
         number="02"
-        desc1="We help your brand grow its online social media following by creating purposeful content that intentionally helps you get your message out. We do everything between video editing, graphic design, and short form content that puts your business in the best light."
+        desc1="We do everything between video editing, graphic design, and short form content that puts your business in the best light."
         desc2="We offer you performance based short form content creation to successfully reach and engage with larger audiences."
-        desc3="Through our various strategies, we are able to convert your obstacles into opportunities for digital growth."
-        desc4="We will work with you every step of the way to make sure you are on the same page as us on what your brand needs most to unlock the next level of social media influence and customer engagement."
+        desc3="Implementing creative narratives to increase product deman and drive engagement."
+        desc4="Converting your creative obstacles into opportunities for digital growth"
         title="CONTENT CREATION"
         subtitle1="What we do"
         subtitle2="Strategists"

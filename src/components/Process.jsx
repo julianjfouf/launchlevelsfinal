@@ -2,12 +2,13 @@ import Image from "next/image";
 import React from "react";
 import dummy from "../../public/images/ringsasset.png";
 import image1 from "../../public/images/onboarding.png";
-import image2 from "../../public/images/designpicture.png";
+import image2 from "../../public/images/designing.png";
 import image3 from "../../public/images/coding.png";
 import image4 from "../../public/images/googlesearch.png";
 import CardLeft from "./subcomponents/CardLeft";
 import CardRight from "./subcomponents/CardRight";
 import localFont from "next/font/local";
+import bluegradient from "../../public/images/bluegradient.png";
 
 const thunder = localFont({
   src: "../../public/fonts/Thunder-BoldLC.woff",
@@ -17,16 +18,25 @@ const Process = () => {
   return (
     <div
       id="process"
-      className="flex flex-col items-center justify-center pb-24 px-6 md:px-14"
+      className="flex flex-col relative items-center justify-center overflow-hidden pt-24 pb-12 px-6 md:px-14"
     >
+      <div className="absolute w-full h-full justify-center items-center flex flex-col -top-24">
+        <Image
+          className="z-[-3] h-full w-auto md:h-auto md:w-full blur"
+          alt="gradient"
+          src={bluegradient}
+        />
+      </div>
       <h1
-        className={`lg:text-[175px] text-transparent bg-clip-text bg-gradient-to-b from-black from-50% to-white ${thunder.className} md:text-7xl text-5xl font-bold uppercase text-center`}
+        className={`lg:text-[175px] text-transparent bg-clip-text bg-gradient-to-b from-black from-50% to-white ${thunder.className} text-[90px] font-bold uppercase text-center`}
       >
         THE PROCESS
       </h1>
-      <p className="md:text-xl mb-12">Where form meets function</p>
+      <p className="md:text-3xl text-center font-semibold text-[#195C5C] mb-16 -mt-4">
+        Where form meets function
+      </p>
       <div className="flex flex-col relative">
-        <div className="bg-black w-[2px] h-full absolute top-0 left-1/2 -translate-x-1/2"></div>
+        <div className="bg-black w-[2px] h-full absolute md:flex hidden top-0 left-1/2 -translate-x-1/2"></div>
         <CardLeft
           title="ANALYZE & STRATEGIZE"
           description="Beginning with online calls to discuss your needs and understand how we can best assist you to reach the results that you want."
@@ -47,7 +57,7 @@ const Process = () => {
         />
         <CardRight
           title="OPTIMIZE & REFINE"
-          description="Understanding what makes your website good is our priority so we optimize your website through on page and organic SEO which improves your chances of ranking higher in google search results which increases traffic to your website."
+          description="We optimize your website through on page and organic SEO which improves your chances of ranking higher in google search results."
           image={image4}
           number="04"
         />

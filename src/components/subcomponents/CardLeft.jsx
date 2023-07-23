@@ -11,7 +11,7 @@ const CardLeft = ({ number, title, description, image }) => {
       >
         <div className="flex flex-col md:items-end items-center md:text-right text-center w-full relative">
           <div className="h-3 w-3 bg-black md:flex hidden rounded-full absolute top-1/2 -translate-y-1/2 right-[-54px]"></div>
-          <div className=" flex flex-col md:items-end items-center bg-white md:bg-transparent md:py-0 py-6">
+          <div className=" flex flex-col md:items-end items-center md:py-0 py-6">
             <h3 className="font-bold xl:text-8xl md:text-5xl text-4xl">
               {title}
             </h3>
@@ -23,7 +23,7 @@ const CardLeft = ({ number, title, description, image }) => {
       </div>
       <div
         className={`md:w-1/2 md:pl-12 flex md:justify-start justify-center z-10 ${
-          number == "01" ? `md:pb-12 md:pt-0 pt-12` : `md:py-12 pt-12`
+          number == "01" ? `md:pb-12 md:pt-0 pt-12` : `md:py-20 pt-12`
         }`}
       >
         <Image src={image} className="h-full object-contain" />

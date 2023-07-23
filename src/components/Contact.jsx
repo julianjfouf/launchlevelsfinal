@@ -100,18 +100,18 @@ const Contact = ({
         className="absolute right-0 top-0 h-full z-[-1] object-contain"
       />
       <h1
-        className={`lg:text-[175px] md:text-7xl text-5xl font-bold uppercase text-center ${thunder.className} text-transparent bg-clip-text bg-gradient-to-b from-white to-black`}
+        className={`lg:text-[175px] text-[90px] font-bold uppercase text-center ${thunder.className} text-transparent bg-clip-text bg-gradient-to-b from-white to-black`}
       >
         Contact
       </h1>
-      <p className="md:text-xl mt-6 mb-12 text-center">Get in touch with us.</p>
+      <p className="md:text-3xl text-center font-semibold text-white mb-16 -mt-4">Get in touch with us.</p>
       <div className="flex xl:flex-row flex-col">
         <form
           ref={formRef}
           onSubmit={handleSubmit}
           className="flex flex-col items-start xl:w-1/2 xl:pr-12"
         >
-          <h3 className="text-xl">What can we do for you?</h3>
+          <h3 className="xl:text-3xl text-xl">What can we do for you?</h3>
           <div className="flex mt-6 gap-3 md:text-xl flex-wrap">
             <div
               onClick={() => setOne(!one)}
@@ -176,19 +176,19 @@ const Contact = ({
           ></textarea>
           <button
             type="submit"
-            className="z-20 cursor-pointer duration-300 before:z-[-1] before:absolute hover:text-black relative before:w-full before:h-full before:bg-white before:rounded-full before:scale-x-0 before:origin-right hover:before:origin-left before:transition-transform hover:before:scale-x-100 overflow-hidden before:duration-300 border-[2px] border-white text-white xl:px-48 md:px-24 sm:px-12 px-6 md:py-10 py-5 w-full rounded-full flex justify-center items-center xl:text-5xl md:text-3xl text-xl"
+            className="z-20 uppercase cursor-pointer duration-300 before:z-[-1] before:absolute hover:text-black relative before:w-full before:h-full before:bg-white before:rounded-full before:scale-x-0 before:origin-right hover:before:origin-left before:transition-transform hover:before:scale-x-100 overflow-hidden before:duration-300 border-[2px] border-white text-white xl:px-48 md:px-24 sm:px-12 px-6 md:py-10 py-5 w-full rounded-full flex justify-center items-center xl:text-5xl md:text-3xl text-xl"
           >
             Send
           </button>
         </form>
-        <div className="xl:w-1/2 hidden lg:flex justify-center font-bold md:text-xl">
+        <div className="xl:w-1/2 hidden lg:flex justify-center items-center font-bold xl:text-3xl md:text-xl">
           <div className="xl:pl-12 hidden lg:flex flex-col gap-6">
             <div className="flex items-center gap-3">
-              <Image src={emailwhite} className="h-12 w-12 object-contain" />
+              <Image src={emailwhite} className="xl:h-16 h-12 w-12 xl:w-16 object-contain" />
               <p>launchlevels@gmail.com</p>
             </div>
             <div className="flex items-center gap-3">
-              <Image src={phonewhite} className="h-12 w-12 object-contain" />
+              <Image src={phonewhite} className="xl:h-16 h-12 w-12 xl:w-16 object-contain" />
               <p>(209) 278-9098</p>
             </div>
             <div>
@@ -198,13 +198,13 @@ const Contact = ({
                   href="https://www.instagram.com/launchlevels/"
                   target="_blank"
                 >
-                  <Image className="h-6 w-6" src={igwhite} />
+                  <Image className="xl:h-8 h-6 xl:w-8 w-6" src={igwhite} />
                 </a>
                 <a
                   href="https://www.facebook.com/profile.php?id=100094516539154"
                   target="_blank"
                 >
-                  <Image className="h-6 w-6" src={fbwhite} />
+                  <Image className="h-6 xl:w-8 xl:h-8 w-6" src={fbwhite} />
                 </a>
                 {/* <Image className="h-6 w-6" src={twitterwhite} />
               <Image className="h-6 w-6" src={tiktokwhite} /> */}
